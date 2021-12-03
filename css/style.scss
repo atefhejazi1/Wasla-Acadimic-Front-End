@@ -1,0 +1,206 @@
+// $primary-color: #3a3a56;
+$primary-color: #5a5ab8;
+header {
+  background-image: url("../images/header/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  z-index: -1;
+  .overlay {
+    background-color: $primary-color;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .navbar {
+    position: relative;
+    top: 10px;
+    padding-top: 0;
+    .navbar-brand {
+      font-weight: bold;
+      padding-top: 25px;
+      color: $primary-color;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .collapse {
+      .navbar-nav {
+        .nav-item {
+          .active {
+            color: $primary-color;
+            border-top: 5px solid $primary-color;
+            margin-top: -5px;
+          }
+          .nav-link {
+            text-transform: capitalize;
+            font-weight: bold;
+            margin-right: 25px;
+            padding-top: 25px;
+            position: relative;
+            width: min-content;
+            &:hover {
+              color: $primary-color;
+              // border-top: 5px solid $primary-color;
+              // margin-top: -5px;
+            }
+
+            // &:hover::after {
+            //   content: " ";
+            //   position: absolute;
+            //   width: 100%;
+            //   height: 5px;
+            //   background-color: $primary-color;
+            //   top: 0;
+            //   left: 0;
+            //   transform: scale(0, 1);
+            // }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  header {
+    .navbar {
+      .collapse {
+        .navbar-nav {
+          .nav-item {
+            .active {
+              border-top: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    .navbar {
+      .collapse {
+        .navbar-nav {
+          .nav-item {
+            .active {
+              border-top: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    .navbar {
+      .collapse {
+        .navbar-nav {
+          .nav-item {
+            .active {
+              border-top: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .services-item {
+    padding: 50px 20px;
+    box-shadow: 0 0 20px 5px #ececf7;
+    margin-bottom: 20px;
+    transition: all 1s ease-in-out !important;
+    border-radius: 10px;
+    h2 {
+      color: $primary-color;
+      font-weight: bold;
+      transition: all 1s ease-in-out !important;
+    }
+
+    i {
+      color: $primary-color;
+      font-size: 25px;
+      margin-bottom: 20px;
+      transition: all 2s ease-in-out !important;
+    }
+
+    &:hover {
+      background-image: linear-gradient(to left, $primary-color, #a846f9);
+      color: #fff;
+      h2 {
+        color: #fff;
+        transition: all 1s ease-in-out !important;
+      }
+      i {
+        display: none;
+      }
+    }
+  }
+
+  .active {
+    h2 {
+      color: #fff;
+    }
+    background-image: linear-gradient(to right, $primary-color, #a846f9);
+    color: #fff;
+    &:hover {
+      background-image: linear-gradient(to left, $primary-color, #a846f9);
+    }
+  }
+  .top-20 {
+    top: 20%;
+  }
+  .top-10 {
+    top: 10%;
+  }
+  .all-services {
+    margin-top: 100px;
+    h2 {
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 42px;
+    }
+    p {
+      color: $primary-color;
+      font-size: 15px;
+      margin-top: 25px;
+    }
+    a {
+      background-color: $primary-color;
+      color: #fff;
+      margin-top: 30px;
+      padding: 10px 30px;
+      background-image: linear-gradient(to right, $primary-color, #a846f9);
+      transition: all 5s linear !important;
+
+      &:hover {
+        background-image: linear-gradient(to left, $primary-color, #a846f9);
+      }
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 767.98px) {
+  .services {
+    .active {
+      margin-top: 80px;
+    }
+  }
+}

@@ -1,0 +1,183 @@
+header {
+  background-image: url("../images/header/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  z-index: -1;
+}
+
+header .overlay {
+  background-color: #5a5ab8;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+header .navbar {
+  position: relative;
+  top: 10px;
+  padding-top: 0;
+}
+
+header .navbar .navbar-brand {
+  font-weight: bold;
+  padding-top: 25px;
+  color: #5a5ab8;
+}
+
+header .navbar .navbar-brand:hover {
+  color: #5a5ab8;
+}
+
+header .navbar .collapse .navbar-nav .nav-item .active {
+  color: #5a5ab8;
+  border-top: 5px solid #5a5ab8;
+  margin-top: -5px;
+}
+
+header .navbar .collapse .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-right: 25px;
+  padding-top: 25px;
+  position: relative;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #5a5ab8;
+}
+
+@media (max-width: 575.98px) {
+  header .navbar .collapse .navbar-nav .nav-item .active {
+    border-top: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header .navbar .collapse .navbar-nav .nav-item .active {
+    border-top: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header .navbar .collapse .navbar-nav .nav-item .active {
+    border-top: none;
+  }
+}
+
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.services .services-item {
+  padding: 50px 20px;
+  -webkit-box-shadow: 0 0 20px 5px #ececf7;
+          box-shadow: 0 0 20px 5px #ececf7;
+  margin-bottom: 20px;
+  -webkit-transition: all 1s ease-in-out !important;
+  transition: all 1s ease-in-out !important;
+  border-radius: 10px;
+}
+
+.services .services-item h2 {
+  color: #5a5ab8;
+  font-weight: bold;
+  -webkit-transition: all 1s ease-in-out !important;
+  transition: all 1s ease-in-out !important;
+}
+
+.services .services-item i {
+  color: #5a5ab8;
+  font-size: 25px;
+  margin-bottom: 20px;
+  -webkit-transition: all 2s ease-in-out !important;
+  transition: all 2s ease-in-out !important;
+}
+
+.services .services-item:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#5a5ab8), to(#a846f9));
+  background-image: linear-gradient(to left, #5a5ab8, #a846f9);
+  color: #fff;
+}
+
+.services .services-item:hover h2 {
+  color: #fff;
+  -webkit-transition: all 1s ease-in-out !important;
+  transition: all 1s ease-in-out !important;
+}
+
+.services .services-item:hover i {
+  display: none;
+}
+
+.services .active {
+  background-image: -webkit-gradient(linear, left top, right top, from(#5a5ab8), to(#a846f9));
+  background-image: linear-gradient(to right, #5a5ab8, #a846f9);
+  color: #fff;
+}
+
+.services .active h2 {
+  color: #fff;
+}
+
+.services .active:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#5a5ab8), to(#a846f9));
+  background-image: linear-gradient(to left, #5a5ab8, #a846f9);
+}
+
+.services .top-20 {
+  top: 20%;
+}
+
+.services .top-10 {
+  top: 10%;
+}
+
+.services .all-services {
+  margin-top: 100px;
+}
+
+.services .all-services h2 {
+  color: #5a5ab8;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.services .all-services p {
+  color: #5a5ab8;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.services .all-services a {
+  background-color: #5a5ab8;
+  color: #fff;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5a5ab8), to(#a846f9));
+  background-image: linear-gradient(to right, #5a5ab8, #a846f9);
+  -webkit-transition: all 5s linear !important;
+  transition: all 5s linear !important;
+}
+
+.services .all-services a:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#5a5ab8), to(#a846f9));
+  background-image: linear-gradient(to left, #5a5ab8, #a846f9);
+}
+
+@media (min-width: 0) and (max-width: 767.98px) {
+  .services .active {
+    margin-top: 80px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
